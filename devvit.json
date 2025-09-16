@@ -1,31 +1,8 @@
 {
-  "$schema": "https://developers.reddit.com/schema/config-file.v1.json",
-  "name": "guess-game",
-  "post": {
-    "dir": "dist/client",
-    "entrypoints": {
-      "default": {
-        "entry": "index.html"
-      }
-    }
-  },
-  "server": {
-    "dir": "dist/server",
-    "entry": "index.cjs"
-  },
-  "media": {},
-  "menu": {
-    "items": [
-      {
-        "label": "Create a new post",
-        "description": "guess-game",
-        "location": "subreddit",
-        "forUserType": "moderator",
-        "endpoint": "/internal/menu/post-create"
-      }
-    ]
-  },
-  "triggers": {
-    "onAppInstall": "/internal/on-app-install"
-  }
+  "name": "guess-the-meme-game",
+  "version": "1.0.0",
+  "description": "🎯 Guess the Meme - Test your meme knowledge and solve word puzzles!",
+  "permissions": [
+    "redditAPI"
+  ]
 }
